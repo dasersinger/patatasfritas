@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 //COMPROBAR QUE ESTAN RELLENADOS Y SINO ADVERTIRLO
                 if (email.isEmpty() || password.isEmpty()){
                     //NO SE PUEDE GUARDAR
-                    Toast.makeText(MainActivity.this, "FUCK NIGGERS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "RELLENA TODOS LOS DATOS JEFE", Toast.LENGTH_SHORT).show();
                 }else{
                     //GUARDAMOS EN LISTA
                     Usuario miusuario = new Usuario(email, password);
                     listaUsuarios.add(miusuario);
-                    Toast.makeText(MainActivity.this, "ALMACENADO EN LA LISTA DE NIGGERS: " + miusuario.toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "ALMACENADO EN LA LISTA: " + miusuario.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
