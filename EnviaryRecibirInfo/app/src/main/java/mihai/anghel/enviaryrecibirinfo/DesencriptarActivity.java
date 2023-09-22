@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import mihai.anghel.enviaryrecibirinfo.modelos.Usuario;
+
 public class DesencriptarActivity extends AppCompatActivity {
 
     @Override
@@ -18,8 +20,9 @@ public class DesencriptarActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
 
         if (bundle != null){
-            String password = bundle.getString("PASS");
-            Toast.makeText(this, password, Toast.LENGTH_SHORT).show();
+            //String password = bundle.getString("PASS");
+            Usuario usuario = (Usuario) bundle.getSerializable("USER");
+            Toast.makeText(this, usuario.toString(), Toast.LENGTH_SHORT).show();
         }
     }
 }
